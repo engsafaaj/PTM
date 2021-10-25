@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TPMDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_Tasks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaskName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TaskProject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TaskDes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TaskDateStart" Type="DateTime" Precision="3" />
+    <Property Name="TaskEnd" Type="DateTime" Precision="3" />
+    <Property Name="TaskDuraiton" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TaskState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="TPMDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_Tasks" EntityType="Self.TB_Tasks" />
+  </EntityContainer>
+</Schema>

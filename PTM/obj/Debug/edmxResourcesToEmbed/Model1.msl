@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TPMDBModelStoreContainer" CdmEntityContainer="TPMDBEntities">
+    <EntitySetMapping Name="TB_Tasks">
+      <EntityTypeMapping TypeName="TPMDBModel.TB_Tasks">
+        <MappingFragment StoreEntitySet="TB_Tasks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+          <ScalarProperty Name="TaskProject" ColumnName="TaskProject" />
+          <ScalarProperty Name="TaskDes" ColumnName="TaskDes" />
+          <ScalarProperty Name="TaskDateStart" ColumnName="TaskDateStart" />
+          <ScalarProperty Name="TaskEnd" ColumnName="TaskEnd" />
+          <ScalarProperty Name="TaskDuraiton" ColumnName="TaskDuraiton" />
+          <ScalarProperty Name="TaskState" ColumnName="TaskState" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
